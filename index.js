@@ -143,6 +143,9 @@ function togglePortfolioPopup(){
 }
 
 document.querySelector(".pp-close").addEventListener("click", togglePortfolioPopup);
+document.querySelector(".pp-close").addEventListener("click", () => {
+    document.querySelector(".pp-thumbnail img").src = "";
+});
 
 function portfolioItemDetails(portfolioItem){
     //for image
@@ -157,6 +160,7 @@ function portfolioItemDetails(portfolioItem){
 document.addEventListener("click" , (e) => {
    if (e.target.classList.contains("pp-inner")) {
        togglePortfolioPopup();
+       document.querySelector(".pp-thumbnail img").src = "";
    }
 });
 
