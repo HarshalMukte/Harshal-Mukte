@@ -119,7 +119,7 @@ body{
         inset: 0;
         height: 100%;
         width: 100%;
-        background-color: $green-yellow;
+        background-image: linear-gradient(to bottom right, var(--one-color) , var(--second-color));
         z-index: -1;
         opacity: 0.12;
     }
