@@ -31,17 +31,27 @@ styleToggler.addEventListener("click", () => {
     //theme color changing
     const alternateStyles = document.querySelectorAll(".alternate-style");
     function setActiveStyle(color){
-
         // hideSection();
-        alternateStyles.forEach((style) => {
-           if (color === style.getAttribute("title")) {
-            style.removeAttribute("disabled");
+        // alternateStyles.forEach((style) => {
+        //    if (color === style.getAttribute("title")) {
+        //     style.removeAttribute("disabled");
 
-           }else{
-               style.setAttribute("disabled","true");
-           }
-         
-        });
+        //    }else{
+        //        style.setAttribute("disabled","true");
+        //    }
+        // });
+        hideSection();
+        setTimeout(() => {
+            hideSection();
+            alternateStyles.forEach((style) => {
+                if (color === style.getAttribute("title")) {
+                 style.removeAttribute("disabled");
+     
+                }else{
+                    style.setAttribute("disabled","true");
+                }
+             });
+        },350)
     }
 
 

@@ -167,8 +167,7 @@ body::before {
   inset: 0;
   height: 100%;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(var(#baf8f5)), to(var(#48d5f1)));
-  background-image: linear-gradient(to bottom right, var(#baf8f5), var(#48d5f1));
+  background-color: #cddc39;
   z-index: -1;
   opacity: 0.12;
 }
