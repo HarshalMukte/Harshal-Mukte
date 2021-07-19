@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshal Mukte</title>
+  <!-- external css -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- favicon link -->
+  <link rel="icon" href="images/favicon.svg" sizes="16x6" />
+
+  <!-- font-awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- style switcher color link -->
+  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1"  >
+  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2"  disabled>
+  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3"  disabled>
+  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4"  disabled>
+
+</head>
+
+<body>
+  <!-- Page Loader Start -->
+  <div class="page-loader">
+    <div class="box"></div>
+    <div class="cir-1" style="--i: 1"></div>
+    <div class="cir-2" style="--i: 2"></div>
+    <div class="cir-3" style="--i: 3"></div>
+    <div class="cir-4" style="--i: 4"></div>
+  </div>
+  <!-- Page Loader End -->
+
+  <!-- Background Circle Start-->
+  <div class="bg-circles">
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="circle-3"></div>
+    <div class="circle-4"></div>
+  </div>
+  <!-- Background Circle Start-->
+
+  <!-- overlay start -->
+  <div class="overlay"></div>
+  <!-- overlay end -->
+
+  <!--Main start -->
+  <div class="main hidden">
+    <!-- Header start -->
+    <div class="header">
+      <div class="container">
+        <div class="row flex-space-between">
+
+          <!-- style switcher start  -->
+          <div class="style-switcher">
+            <div class="style-toggler">
+              <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <h4>Themes Colors</h4>
+            <div class="colors">
+              <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+              <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+              <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+              <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            </div>
+          </div>
+          <!-- style switcher end  -->
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+          <nav class="nav">
+            <div class="nav-inner">
+              <ul>
+                <li><a href="#home" class="nav-item link-item">home</a></li>
+                <li><a href="#about" class="nav-item link-item">about</a></li>
+                <li>
+                  <a href="#portfolio" class="nav-item link-item">portfolio</a>
+                </li>
+                <li>
+                  <a href="#contact" class="nav-item link-item">contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Header end -->
+
+    <!-- Home section starts -->
+    <section class="home-section align-items-center" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="home-text">
+            <p>Hello, I'm</p>
+            <h1></h1>
+            <h2>frontend web developer</h2>
+            <a href="#about" class="btn link-item">more about me</a>
+            <a href="#portfolio" class="btn link-item">portfolio</a>
+          </div>
+          <div class="home-img">
+            <div class="img-box">
+              <img src="images/profile.png" alt="home-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home section end -->
+
+    <!-- About section start -->
+    <section class="about-section sec-padding" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>about me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box">
+              <img src="images/profile.png" alt="about-img" />
+            </div>
+          </div>
+          <div class="about-text">
+            <p>
+              Seeking a challenging position in a reputable organization to expand and utilize my learning, skills and knowledge. Possess excellent communication skills and have an eye for detail. I am outgoing, dedicated, and open-minded. I get across to people and adjust to changes with ease. I believe that a person should work on developing their professional skills and learning new things all the time
+            </p>
+            <h3>skills</h3>
+            <div class="skills">
+              <div class="skill-item">html</div>
+              <div class="skill-item">css</div>
+              <div class="skill-item">Sass</div>
+              <div class="skill-item">javaScript</div>
+              <div class="skill-item">bootstrap</div>
+              <div class="skill-item">github</div>
+            </div>
+
+            <div class="about-tabs">
+              <button class="tab-item active" type="button" data-target="#education">
+                education
+              </button>
+              <button class="tab-item" type="button" data-target="#experience">
+                experience
+              </button>
+            </div>
+
+            <!-- Education start -->
+            <div class="tab-content active" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2020 - Current</span>
+                  <h4>
+                    BSc.IT - <span>Mumbai university</span>
+                  </h4>
+                  <p>
+                   I am doing my BSc.IT from 'N. B. MEHTA COLLEGE' in bordi.
+                   From the college starting days till now I am Programming, coding and learning new things.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <span class="date">2017 - 2019</span>
+                  <h4>
+                    HSC - <span>Maharashtra Board</span>
+                  </h4>
+                  <p>
+                    I did my 11th -12th standard from 'PIROJSHA GODREJ JUNIOR COLLEGE' in bordi.
+                    This was the first time where I wrote my first programming code ("hello world").
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <span class="date">2007 - 2017</span>
+                  <h4>
+                    SSC - <span>Maharashtra Board</span>
+                  </h4>
+                  <p>
+                    I studied 1st - 10th standard from 'JADI RANA HIGH SCHOOL' in Sanjan.
+                    At that time I have no Idea about Programming(coding).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Education end -->
+
+            <!-- Experience starts -->
+            <div class="tab-content" id="experience">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2020-Current</span>
+                  <h4>Freelancing - <span>Frontend-Developer</span></h4>
+                  <p>
+                    To see my work <br><span>Click hear : </span><a href="#portfolio" class="btn link-item">my work</a>
+                  </p>
+                </div>
+
+                <!-- <div class="timeline-item">
+                  <span class="date">2001-2002</span>
+                  <h4>web development - <span>harshal mukte</span></h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Ut, quaerat. Aliquam ducimus odio harum suscipit!
+                  </p>
+                </div> -->
+              </div>
+            </div>
+            <!-- Experience end -->
+
+            <a href="cv/Resume-Harshal Mukte.pdf" target="_blank" class="btn">download cv</a>
+            <a href="#contact" class="btn link-item">hire me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Portfolio Section start -->
+    <section class="portfolio-section sec-padding" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>recent work</h2>
+          </div>
+        </div>
+        <div class="row">
+
+          <!-- portfolio Item Start -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/portfolio-website-eg.png" alt="portfolio-item-thumb" />
+            </div>
+            <h3 class="portfolio-item-title">personal portfolio</h3>
+            <button type="button" class="btn view-project-btn">
+              view project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                 The personal portfolio website is beautiful and responsive which also has beautiful animation on scroll and many more, please have a look in live demo.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>7 july 2021</span></li>
+                  <li>Technologies used - <span>html5, CSS3, Sass and JavaScript</span></li>
+                  <li>Source Code - <span><a href="https://github.com/HarshalMukte/portfolio-example" target="_blank">github.com/HarshalMukte</a></span></li>
+                  <li>
+                    View Online -
+                    <span><a href="https://harshal-portfolio-eg.netlify.app/" target="_blank">harshal-portfolio-eg.netlify.app</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio Item End -->
+
+          <!-- portfolio Item Start -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/Image-Slider.png" alt="portfolio-item-thumb" />
+            </div>
+            <h3 class="portfolio-item-title">Image Slider</h3>
+            <button type="button" class="btn view-project-btn">
+              view project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                Image-Slider using swiper js. It is beautiful library to create mobile responsive touch slider.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>1st July 2021</span></li>
+                  <li>Technologies used - <span>html5, CSS3 and JavaScript</span></li>
+                  <li>Source Code - <span><a href="https://github.com/HarshalMukte/Image-Slider" target="_blank">github.com/HarshalMukte</a></span></li>
+                  <li>
+                    View Online -
+                    <span><a href="https://harshal-image-slider.netlify.app/" target="_blank">harshal-image-slider.netlify.app</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio Item End -->
+  
+          <!-- portfolio Item Start -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/Apple-website.png" alt="portfolio-item-thumb" />
+            </div>
+            <h3 class="portfolio-item-title">Fruits Website</h3>
+            <button type="button" class="btn view-project-btn">
+              view project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Fruits website created for to display and sell your fruits online. It also has a beautiful carousal in it.
+                  Please don't mind have a look.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>24th June 2021</span></li>
+                  <li>Technologies used - <span>html5, CSS3, Sass and JavaScript</span></li>
+                  <li>Source Code - <span><a href="https://github.com/HarshalMukte/apple-website" target="_blank">github.com/HarshalMukte</a></span></li>
+                  <li>
+                    View Online -
+                    <span><a href="https://harshal-fruits.netlify.app/" target="_blank">harshal-fruits.app</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio Item End -->
+
+          <!-- portfolio Item Start -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/pizza-Website.png" alt="portfolio-item-thumb" />
+            </div>
+            <h3 class="portfolio-item-title">Landing Page</h3>
+            <button type="button" class="btn view-project-btn">
+              view project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Pizza recipe landing page using html, Sass and JavaScript using AOS animation library
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>20 june 2021</span></li>
+                  <li>Technologies used - <span>Html, Sass and JavaScript</span></li>
+                  <li>Source Code - <span><a href="https://github.com/HarshalMukte/pizza-recipe-landing-page" target="_blank">github.com/HarshalMukte</a></span></li>
+                  <li>
+                    View Online -
+                    <span><a href="https://harshal-pizza-landing-page.netlify.app/" target="_blank">harshal-pizza-landing-page.netlify.app</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio Item End -->
+
+          <!-- portfolio Item Start -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/Google-logo-transition.png" alt="portfolio-item-thumb" />
+            </div>
+            <h3 class="portfolio-item-title">Logo Animation</h3>
+            <button type="button" class="btn view-project-btn">
+              view project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                   Google logo transition on pressing open and close button using vanilla JavaScript.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>16 june 2020</span></li>
+                  <li>Technologies used - <span>Html, Css and JavaScript</span></li>
+                  <li>Source Code - <span><a href="https://github.com/HarshalMukte/google-logo-transition" target="_blank">github.com/HarshalMukte</a></span></li>
+                  <li>
+                    View Online -
+                    <span><a href="https://harshal-google-logo-animation.netlify.app/" target="_blank">harshal-google-logo-animation.netlify.app</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio Item End -->
+
+          <!-- portfolio Item Start -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/Computer.png" alt="portfolio-item-thumb" />
+            </div>
+            <h3 class="portfolio-item-title">fifth portfolio</h3>
+            <button type="button" class="btn view-project-btn">
+              view project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda labore explicabo nulla sit! Id quia voluptatum
+                  dolorum ab, et perferendis ut quibusdam nemo perspiciatis
+                  consectetur asperiores temporibus exercitationem, velit
+                  excepturi, beatae eligendi error quam. Dolore soluta sint
+                  mollitia modi reiciendis.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>4 Dec 2020</span></li>
+                  <li>Technologies used - <span>Html, Css</span></li>
+                  <li>Source Code - <span>Frontend</span></li>
+                  <li>
+                    View Online -
+                    <span><a href="#" target="_blank">www.domain.com</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio Item End -->
+
+          <!-- portfolio Item Start -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/shoes-cards.png" alt="portfolio-item-thumb" />
+            </div>
+            <h3 class="portfolio-item-title">Shoes-Cards</h3>
+            <button type="button" class="btn view-project-btn">
+              view project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda labore explicabo nulla sit! Id quia voluptatum
+                  dolorum ab, et perferendis ut quibusdam nemo perspiciatis
+                  consectetur asperiores temporibus exercitationem, velit
+                  excepturi, beatae eligendi error quam. Dolore soluta sint
+                  mollitia modi reiciendis.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>4 Dec 2020</span></li>
+                  <li>Technologies used - <span>Html, Css</span></li>
+                  <li>Source Code - <span>Frontend</span></li>
+                  <li>
+                    View Online -
+                    <span><a href="#" target="_blank">www.domain.com</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio Item End -->
+
+          <!-- portfolio Item Start -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="images/google-search-bar-clone.png" alt="portfolio-item-thumb" />
+            </div>
+            <h3 class="portfolio-item-title">sixth portfolio</h3>
+            <button type="button" class="btn view-project-btn">
+              view project
+            </button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda labore explicabo nulla sit! Id quia voluptatum
+                  dolorum ab, et perferendis ut quibusdam nemo perspiciatis
+                  consectetur asperiores temporibus exercitationem, velit
+                  excepturi, beatae eligendi error quam. Dolore soluta sint
+                  mollitia modi reiciendis.
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Created - <span>4 Dec 2020</span></li>
+                  <li>
+                    Technologies used - <span>Html, Css and bootstrap</span>
+                  </li>
+                  <li>Source Code - <span>Frontend</span></li>
+                  <li>
+                    View Online -
+                    <span><a href="#" target="_blank">www.domain.com</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- portfolio Item End -->
+
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section end -->
+
+    <!-- Contact Section Start -->
+    <section class="contact-section sec-padding" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>contact me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <form >
+              <div class="row">
+                <div class="input-group">
+                  <input type="text" placeholder="Name" name="name" class="input-control" required />
+                </div>
+                <div class="input-group">
+                  <input type="email" placeholder="Email" name="email" class="input-control" required />
+                </div>
+                <div class="input-group">
+                  <input type="text" placeholder="Subject" name="subject" class="input-control" required />
+                </div>
+                <div class="input-group">
+                  <textarea placeholder="Message" name="mesage" class="input-control" required></textarea>
+                </div>
+                <div class="submit-btn">
+                  <button class="btn" type="submit">send message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <h3>Email</h3>
+              <p>harshalmukte@gmail.com</p>
+            </div>
+            <div class="contact-info-item">
+              <h3>Phone</h3>
+              <p>+91-9106575515</p>
+            </div>
+            <div class="contact-info-item">
+              <h3>Follow me</h3>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/harshalmukte/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://jsfiddle.net/user/harshalmukte/fiddles/" target="_blank"><i class="fab fa-jsfiddle"></i></a>
+                <a href="https://github.com/HarshalMukte" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/harshalmukte12/" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+  </div>
+
+  <!--Main end -->
+
+  <!-- Portfolio Item Details Popup Start -->
+  <div class="portfolio-popup">
+    <div class="pp-inner">
+      <div class="pp-content">
+        <div class="pp-header">
+          <button class="btn pp-close">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="pp-thumbnail">
+            <img src="" alt="pp-thumbnail" />
+          </div>
+          <h3></h3>
+        </div>
+        <div class="pp-body"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Item Details Popup End -->
+
+  <script src="index.js"></script>
+</body>
+
+</html>
