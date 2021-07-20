@@ -40,18 +40,20 @@ styleToggler.addEventListener("click", () => {
         //        style.setAttribute("disabled","true");
         //    }
         // });
+
         hideSection();
+        
         setTimeout(() => {
             hideSection();
             alternateStyles.forEach((style) => {
                 if (color === style.getAttribute("title")) {
-                 style.removeAttribute("disabled");
-     
+                style.removeAttribute("disabled");
+    
                 }else{
                     style.setAttribute("disabled","true");
                 }
-             });
-        },600)
+            });
+        },750)
     }
 
 
