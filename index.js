@@ -53,7 +53,7 @@ styleToggler.addEventListener("click", () => {
                     style.setAttribute("disabled","true");
                 }
             });
-        },750)
+        },1000)
     }
 
 
