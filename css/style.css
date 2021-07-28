@@ -807,7 +807,7 @@ body .main section .container img {
 
 @media screen and (max-width: 370px) {
   .header .style-switcher .colors span {
-    margin: 2px;
+    margin: 5px;
   }
 }
 
